@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>浜松での解放 — 第1章</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#f7f7f9; --fg:#222; --muted:#666; --brand:#2f6fed; --card:#fff; --border:#e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: "Noto Sans JP", system-ui, sans-serif; }
+    a { color:var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom:1px solid var(--border); background:var(--card); }
+    .container { max-width: 960px; margin: 0 auto; padding: 16px; }
+    .site-title { font-weight:600; letter-spacing: .02em; }
+    nav.breadcrumb { font-size:.9rem; color:var(--muted); margin-top:8px; }
+    nav.breadcrumb ol { list-style:none; display:flex; flex-wrap:wrap; gap:6px; padding:0; margin:0; }
+    nav.breadcrumb li::after { content:"›"; margin:0 6px; color:var(--muted); }
+    nav.breadcrumb li:last-child::after { content:""; }
+    nav.breadcrumb li:last-child { color:var(--fg); font-weight:600; }
+    .hero { padding:48px 0; }
+    .hero h1 { margin:0 0 8px; font-size: clamp(1.6rem, 4vw, 2.2rem); }
+    .hero p { margin:0; color:var(--muted); }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; box-shadow: 0 2px 6px rgba(0,0,0,.04); }
+    .grid { display:grid; grid-template-columns: 1fr; gap:16px; }
+    @media (min-width: 720px) { .grid { grid-template-columns: 2fr 1fr; } }
+    .section-title { font-weight:600; margin: 24px 0 12px; }
+    footer { margin-top:24px; border-top:1px solid var(--border); color:var(--muted); }
+    .btn {
+      display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid var(--border);
+      background:#fff; color:var(--fg);
+    }
+    .btn:hover { background:#f0f4ff; border-color:#c7d2fe; }
+    /* 小さなアクセント */
+    .accent { border-left:4px solid var(--brand); padding-left:12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="site-title">浜松での解放</div>
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="/">ホーム</a></li>
+          <li><a href="/hamamatsu">浜松での解放</a></li>
+          <li>第1章 朝の出発</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>第1章 朝の出発</h1>
+      <p class="accent">静かな期待と、少しの緊張。ハンドルに触れる手が、今日を確かめる。</p>
+    </section>
+
+    <div class="grid">
+      <article class="card">
+        <h2 class="section-title">小さな記録</h2>
+        <p>
+          信号待ちの間に流れた曲が、思いがけず心をほどいてくれた。<br>
+          風に混じるコーヒーの香りに、これまでの時間がやわらかく重なる。
+        </p>
+        <p>
+          今日はただ、前へ。必要なだけの距離を、丁寧に。<br>
+          そして、戻る場所もまた、やさしく整えていく。
+        </p>
+        <a class="btn" href="/hamamatsu/chapter-2.html">次の章へ</a>
+      </article>
+
+      <aside class="card">
+        <h3 class="section-title">章の目次</h3>
+        <ul>
+          <li><a href="/hamamatsu/chapter-1.html">第1章 朝の出発</a></li>
+          <li><a href="/hamamatsu/chapter-2.html">第2章 教習での出来事</a></li>
+          <li><a href="/hamamatsu/chapter-3.html">第3章 帰り道の静けさ</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="container">
+    <p>© 2025 — 記憶と希望の間に、静かな地図を。</p>
+  </footer>
+</body>
+</html>
